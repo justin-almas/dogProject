@@ -1,0 +1,20 @@
+h2 {
+    color :black;
+    text-align: center;
+    font-size: 50px;
+    width: auto;
+}
+label {
+    text-align: center;
+    font-size: 50px;
+}
+.result {
+    text-align: center;
+    font-size: 50px;
+}
+select {
+    display:block;
+    margin: 0 auto;
+    font-size: 50px;
+
+}

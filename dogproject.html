@@ -1,0 +1,29 @@
+<head>
+    <link rel = "stylesheet" type = "text/css" href = "dogprojectstyle.css">
+    
+  </head>
+<h2>
+    Is the chihuahua outside?
+</h2>
+<label> 
+    <select class="yesNo" name="yesNo"> 
+    <option value="">Select</option>
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+</select> <div class="result"></div>
+<script> 
+const selectElement = document.querySelector(".yesNo"); 
+const result = document.querySelector(".result"); 
+selectElement.addEventListener("change", (event) => {  
+    if (event.target.value.localeCompare("Yes") == 0) { 
+        document.body.style.backgroundColor = "red"; 
+        result.textContent = `Don't Let The Dogs Out!`
+        } else { 
+            document.body.style.backgroundColor = "green";
+            result.textContent = `Let The Dogs Out`
+        } 
+        });
+    setTimeout(() => {location.reload(); }, 5000); 
+    </script> 
+        
+    </label>
